@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ContactsActivity"
+    tools:context=".presentation.ContactsActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -23,6 +23,7 @@
             android:layout_height="24dp"
             android:layout_marginStart="16dp"
             android:src="@drawable/ic_arrow_back"
+            android:contentDescription="@string/button_back_to_main_activity"
             android:background="@android:color/transparent"
             android:scaleType="centerCrop"
             android:layout_gravity="center_vertical" />

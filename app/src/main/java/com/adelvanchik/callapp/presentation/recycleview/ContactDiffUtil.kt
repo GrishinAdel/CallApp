@@ -1,4 +1,4 @@
-package com.adelvanchik.callapp.recycleview
+package com.adelvanchik.callapp.presentation.recycleview
 
 import androidx.recyclerview.widget.DiffUtil
 import com.adelvanchik.callapp.entity.Contact

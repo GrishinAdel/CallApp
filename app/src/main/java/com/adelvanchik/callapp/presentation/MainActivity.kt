@@ -1,4 +1,4 @@
-package com.adelvanchik.callapp
+package com.adelvanchik.callapp.presentation
 
 import android.Manifest
 import android.content.Intent
@@ -13,8 +13,8 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.lifecycle.ViewModelProvider
+import com.adelvanchik.callapp.R
 import com.adelvanchik.callapp.databinding.ActivityMainBinding
-import com.adelvanchik.callapp.recycleview.ContactListAdapter
 import com.bumptech.glide.*
 import com.bumptech.glide.request.target.CustomTarget
 import com.bumptech.glide.request.transition.Transition
@@ -27,8 +27,6 @@ class MainActivity : AppCompatActivity() {
     private var _binding: ActivityMainBinding? = null
     private val binding: ActivityMainBinding
         get() = _binding ?: throw RuntimeException("ActivityMainBinding == null")
-
-    private lateinit var adapter: ContactListAdapter
 
     private var myLocationOnTheScreenIsTheFirst = true
 
@@ -132,7 +130,7 @@ class MainActivity : AppCompatActivity() {
             btnMessage.setOnClickListener {
                 val sendIntent = Intent(Intent.ACTION_VIEW)
                 sendIntent.data = Uri.parse("sms: ")
-                startActivity(sendIntent);
+                startActivity(sendIntent)
             }
             btnUsersOutline.setOnClickListener {
                 checkPermissionInReadContacts()

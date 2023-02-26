@@ -1,9 +1,9 @@
-package com.adelvanchik.callapp
+package com.adelvanchik.callapp.presentation
 
-import android.provider.Settings.Global.getString
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.adelvanchik.callapp.R
 
 class MainViewModel : ViewModel() {
 

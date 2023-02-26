@@ -1,4 +1,4 @@
-package com.adelvanchik.callapp.recycleview
+package com.adelvanchik.callapp.presentation.recycleview
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -1,4 +1,4 @@
-package com.adelvanchik.callapp
+package com.adelvanchik.callapp.presentation
 
 import android.app.Application
 import android.content.ContentResolver

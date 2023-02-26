@@ -5,12 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/black2"
-    tools:context=".MainActivity">
+    tools:context=".presentation.MainActivity">
 
     <ImageButton
         android:id="@+id/btn_roll_up"
         android:layout_width="32dp"
         android:layout_height="32dp"
+        android:contentDescription="@string/btn_roll_up"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_arrow_down"
@@ -24,6 +25,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginStart="16dp"
+        android:contentDescription="@string/button_message"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_message"
@@ -35,6 +37,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginTop="8dp"
+        android:contentDescription="@string/button_watch_contacts"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
         android:src="@drawable/ic_users_outline"
@@ -47,6 +50,7 @@
         android:layout_width="32dp"
         android:layout_height="32dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="@string/button_change_users"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_square_outline"
         app:layout_constraintEnd_toEndOf="parent"
@@ -85,6 +89,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@string/background_of_first_user"
                     android:alpha="0.5"/>
 
             </androidx.cardview.widget.CardView>
@@ -105,6 +110,7 @@
                     android:layout_height="100dp"
                     android:background="@null"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@string/icon_of_first_user"
                     android:src="@drawable/user_image_1"/>
             </androidx.cardview.widget.CardView>
 
@@ -113,7 +119,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:drawableRight="@drawable/ic_mic_off_white_small"
                 android:text="@string/you"
                 android:textSize="14sp"
                 android:paddingHorizontal="8dp"
@@ -123,7 +128,8 @@
                 android:textColor="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:drawableRightCompat="@drawable/ic_mic_off_white_small" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -147,6 +153,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@string/background_of_second_user"
                     android:alpha="0.5"/>
 
             </androidx.cardview.widget.CardView>
@@ -169,6 +176,7 @@
                     android:layout_height="100dp"
                     android:background="@null"
                     android:scaleType="centerCrop"
+                    android:contentDescription="@string/icon_of_second_user"
                     android:src="@drawable/user_image_2" />
             </androidx.cardview.widget.CardView>
 
@@ -177,7 +185,6 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="8dp"
-                android:drawableRight="@drawable/ic_mic_off_white_small"
                 android:text="@string/name_user_2"
                 android:textColor="@color/white"
                 android:paddingHorizontal="8dp"
@@ -187,7 +194,8 @@
                 android:singleLine="true"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:drawableRightCompat="@drawable/ic_mic_off_white_small" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -201,6 +209,7 @@
         android:layout_height="10dp"
         android:background="@android:color/transparent"
         android:scaleType="centerCrop"
+        android:contentDescription="@string/button_hide_down_buttons"
         android:src="@drawable/ic_horizontal_line"
         app:layout_constraintBottom_toTopOf="@+id/btn_mic"
         app:layout_constraintEnd_toEndOf="parent"
@@ -214,6 +223,7 @@
         android:layout_marginStart="16dp"
         android:background="@drawable/round_button_white"
         android:scaleType="center"
+        android:contentDescription="@string/button_action_videocamera"
         android:src="@drawable/ic_videocamera_off"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btn_mic"
@@ -226,6 +236,7 @@
         android:layout_height="56dp"
         android:background="@drawable/round_button_white"
         android:scaleType="center"
+        android:contentDescription="@string/button_action_mic"
         android:src="@drawable/ic_mic_off"
         app:layout_constraintBottom_toBottomOf="@+id/btn_video_camera"
         app:layout_constraintEnd_toStartOf="@+id/btn_hand"
@@ -237,6 +248,7 @@
         android:layout_height="56dp"
         android:background="@android:color/transparent"
         android:scaleType="fitCenter"
+        android:contentDescription="@string/button_hand"
         android:src="@drawable/ic_hand_heart"
         app:layout_constraintBottom_toBottomOf="@+id/btn_mic"
         app:layout_constraintEnd_toStartOf="@+id/btn_phone_down"
@@ -247,6 +259,7 @@
         android:layout_width="56dp"
         android:layout_height="56dp"
         android:layout_marginEnd="16dp"
+        android:contentDescription="@string/button_phone_down"
         android:background="@drawable/round_button_red"
         android:scaleType="center"
         android:src="@drawable/ic_phone_down"

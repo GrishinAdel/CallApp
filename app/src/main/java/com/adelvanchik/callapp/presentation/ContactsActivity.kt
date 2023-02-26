@@ -1,21 +1,12 @@
-package com.adelvanchik.callapp
+package com.adelvanchik.callapp.presentation
 
-import android.app.DownloadManager.Query
-import android.content.ContentResolver
-import android.content.ContentUris
 import android.content.Context
 import android.content.Intent
-import android.graphics.Bitmap
-import android.graphics.BitmapFactory
 import android.os.Bundle
-import android.provider.ContactsContract
-import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.content.ContentResolverCompat
 import androidx.lifecycle.ViewModelProvider
 import com.adelvanchik.callapp.databinding.ActivityContactsBinding
-import com.adelvanchik.callapp.entity.Contact
-import com.adelvanchik.callapp.recycleview.ContactListAdapter
+import com.adelvanchik.callapp.presentation.recycleview.ContactListAdapter
 
 
 class ContactsActivity : AppCompatActivity() {
