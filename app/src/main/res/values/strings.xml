@@ -7,4 +7,18 @@
     <string name="example_number">89XXXXXXXXX</string>
     <string name="you">You</string>
     <string name="name_user_2">Venera Phone Long Contact For Test And Test Again Test</string>
+    <string name="btn_roll_up">btn roll up</string>
+    <string name="button_message">button message</string>
+    <string name="button_watch_contacts">button watch contacts</string>
+    <string name="button_change_users">button change users</string>
+    <string name="button_hide_down_buttons">button hide down buttons</string>
+    <string name="button_action_videocamera">button action videocamera</string>
+    <string name="button_action_mic">button action mic</string>
+    <string name="button_hand">button hand</string>
+    <string name="button_phone_down">button phone down</string>
+    <string name="button_back_to_main_activity">button back to main activity</string>
+    <string name="background_of_first_user">background of first user</string>
+    <string name="icon_of_first_user">icon of first user</string>
+    <string name="background_of_second_user">background of second user</string>
+    <string name="icon_of_second_user">icon of second user</string>
 </resources>
